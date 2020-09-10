@@ -151,7 +151,7 @@
             // 
             // txt_idGravadora
             // 
-            this.txt_idGravadora.Enabled = false;
+            this.txt_idGravadora.AllowDrop = true;
             this.txt_idGravadora.Location = new System.Drawing.Point(12, 199);
             this.txt_idGravadora.Name = "txt_idGravadora";
             this.txt_idGravadora.Size = new System.Drawing.Size(100, 20);
@@ -159,7 +159,6 @@
             // 
             // txt_idCD
             // 
-            this.txt_idCD.Enabled = false;
             this.txt_idCD.Location = new System.Drawing.Point(12, 245);
             this.txt_idCD.Name = "txt_idCD";
             this.txt_idCD.Size = new System.Drawing.Size(100, 20);
