@@ -113,5 +113,26 @@ namespace POO3C34
         {
             GridMusicas.DataSource = bllMusica.ListarTodasMusicas();
         }
+
+        private void btn_editar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                dtoMusica.IdMusica = int.Parse(txt_id.Text);
+                dtoMusica.Nome = txt_nome.Text.ToString();
+                dtoMusica.NomeAutor = txt_autor.Text.ToString();
+                dtoMusica.IdGravadora = int.Parse(txt_idGravadora.Text);
+                dtoMusica.IdCD = int.Parse(txt_idCD.Text);
+
+                bllMusica.AlterarMusica(dtoMusica);
+                MessageBox.Show("Alteração Feita com Sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GridMusicas.DataSource = bllMusica.ListarTodasMusicas();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

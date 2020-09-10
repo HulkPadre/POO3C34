@@ -77,12 +77,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(327, 208);
+            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_voltar);
             this.Controls.Add(this.GridCds);
             this.Name = "FrmCds";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmCds";
+            this.Text = "CDS";
             this.Load += new System.EventHandler(this.FrmCds_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridCds)).EndInit();
             this.ResumeLayout(false);

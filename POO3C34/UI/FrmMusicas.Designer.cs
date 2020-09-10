@@ -175,9 +175,10 @@
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(91, 49);
             this.btn_editar.TabIndex = 23;
-            this.btn_editar.Text = "Inserir";
+            this.btn_editar.Text = "Editar";
             this.btn_editar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click_1);
             // 
             // pictureBox2
             // 
@@ -240,6 +241,7 @@
             // 
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(532, 284);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_editar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txt_idCD);
